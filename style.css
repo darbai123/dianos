@@ -12,7 +12,7 @@ html{
 }
 body {
     background: #f3b7b7;
-    color: #fc5c5c;
+    color: #f33a3a;
 }
 #header {
     width: 100%;
@@ -28,11 +28,14 @@ body {
 .container {
 padding: 10px 10%;
 }
+
 nav{
     display: flex;
-    align-items: center;
+    align-items: right;
     justify-content: space-between;
     flex-wrap: wrap;
+   margin-top: 20px;
+  
 }
 .logo {
     mix-blend-mode: multiply;
@@ -42,12 +45,13 @@ nav{
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: -10px 5px;
 }
 nav ul li a{
-    color: white;
+    color: rgb(121, 7, 7);
     text-decoration: none;
-    font-size: 18px ;
+    font-size: 20px ;
+    font-weight: 800;
     position: relative;
 }
 nav ul li a::after{
@@ -377,6 +381,64 @@ color: white;
 nav .fas{
     display: none;
 }
+@media only screen and (max-width: 1165px){
+    nav{
+        display: flex;
+        align-items: right;
+        justify-content: space-between;
+        flex-wrap: wrap;
+       margin-top: 20px;
+      
+    }
+    .logo {
+        mix-blend-mode: multiply;
+        width: 220px;
+        height: 220px;
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10px 5px;
+    }
+    nav ul li a{
+        color: rgb(121, 7, 7);
+        text-decoration: none;
+        font-size: 18px ;
+        font-weight: 750;
+        position: relative;
+    }
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #ff004f;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+    }
+    nav ul li a:hover::after{
+        width: 100%;
+    }
+    .header-text{
+        margin-top: -50px;
+        font-size: 30px;
+    }
+    .header-text h1{
+        font-size: 60px;
+        margin: 20px;
+    }
+    .header-text h1 span {
+        color:#ff004f
+    }
+    .header-text {
+       margin-top: 50px;
+        top: 100%; /* Nustato .header-text viršūnę virš .header apačios */
+        left: 0; /* Nustato .header-text kairę kraštą prasidėjimą nuo ekrano kairės pusės */
+        width: 100%; /* Užtikrina, kad .header-text užimtų visą prieinamą plotį */
+        transform: translateY(10px); /* Galite pridėti norimą vertikalaus postūmio dydį */
+    }
+}
 
 @media only screen and (max-width: 600px){
 #header{
@@ -401,6 +463,7 @@ nav .fas{
         left: 0; /* Nustato .header-text kairę kraštą prasidėjimą nuo ekrano kairės pusės */
         width: 100%; /* Užtikrina, kad .header-text užimtų visą prieinamą plotį */
         transform: translateY(150px); /* Galite pridėti norimą vertikalaus postūmio dydį */
+       
     }
     .header-text{
         /* margin-top: 900px; */
