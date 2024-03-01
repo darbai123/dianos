@@ -442,7 +442,7 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
 #header{
-    background-image: url(LOGO/fb.png);
+    background-image: url(LOGO/fb.jpg);
     margin-bottom: 20px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -481,7 +481,7 @@ nav .fas{
         display: block;
         font-size: 25px;
         z-index: 10;
-        color: rgb(100, 5, 5);
+        color: white;
 
     }
     nav ul {
