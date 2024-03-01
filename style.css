@@ -462,7 +462,7 @@ nav .fas{
         top: 100%; /* Nustato .header-text viršūnę virš .header apačios */
         left: 0; /* Nustato .header-text kairę kraštą prasidėjimą nuo ekrano kairės pusės */
         width: 100%; /* Užtikrina, kad .header-text užimtų visą prieinamą plotį */
-        transform: translateY(150px); /* Galite pridėti norimą vertikalaus postūmio dydį */
+        transform: translateY(50px); /* Galite pridėti norimą vertikalaus postūmio dydį */
        
     }
     .header-text{
