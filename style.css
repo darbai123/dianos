@@ -68,8 +68,13 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: -50px;
+   
     font-size: 30px;
+    margin-top: 50px;
+    top: 100%; /* Nustato .header-text viršūnę virš .header apačios */
+    left: 0; /* Nustato .header-text kairę kraštą prasidėjimą nuo ekrano kairės pusės */
+    width: 100%; /* Užtikrina, kad .header-text užimtų visą prieinamą plotį */
+    transform: translateY(10px); /* Galite pridėti norimą vertikalaus postūmio dydį */
 }
 .header-text h1{
     font-size: 60px;
@@ -447,12 +452,17 @@ nav .fas{
     background-repeat: no-repeat;
     background-size: cover;
     }
+    .header-content {
+        /* Užtikrina, kad turinys nekistų, kai keičiama foninė nuotrauka */
+        margin-bottom: 50px;
+    }
     .logo {
         mix-blend-mode: multiply;
         width: 60px;
         height: 60px;
         margin-left: -30px;
     }
+ 
     #header {
         position: relative; /* Suteikia referencinę poziciją .header-text elementui */
     }
@@ -466,7 +476,7 @@ nav .fas{
        
     }
     .header-text{
-        /* margin-top: 900px; */
+       
         font-size: 16px;
         color: black;
     }
