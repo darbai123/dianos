@@ -391,20 +391,34 @@ nav .fas{
         height: 60px;
         margin-left: -30px;
     }
+    #header {
+        position: relative; /* Suteikia referencinę poziciją .header-text elementui */
+    }
+    
+    .header-text {
+        position: absolute;
+        top: 100%; /* Nustato .header-text viršūnę virš .header apačios */
+        left: 0; /* Nustato .header-text kairę kraštą prasidėjimą nuo ekrano kairės pusės */
+        width: 100%; /* Užtikrina, kad .header-text užimtų visą prieinamą plotį */
+        transform: translateY(150px); /* Galite pridėti norimą vertikalaus postūmio dydį */
+    }
     .header-text{
-        margin-top: 850px;
+        /* margin-top: 900px; */
         font-size: 16px;
+        color: black;
     }
     .header-text h1{
         font-size: 30px     ;
+        
     }
     .about-col-1 {
      margin-top: 65px;
     }
-    
     nav .fas{
         display: block;
         font-size: 25px;
+        z-index: 10;
+        color: rgb(100, 5, 5);
 
     }
     nav ul {
@@ -415,18 +429,20 @@ nav .fas{
         width: 200px;
         height: 100vh;
         padding-top: 50px;
-        z-index: 1000;
+        z-index: 100000;
         transition: right 0.5s;
     }
     nav ul li{
         display: block;
         margin: 25px;
+        z-index: 100000;
     }
     nav ul .fas{
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
+        z-index: 100000;
     }
     .sub-title{
         font-size: 40px;
