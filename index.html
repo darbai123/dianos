@@ -19,14 +19,14 @@
         <nav>
           <img src="LOGO/3.png" class="logo" />
           <ul id="sidemenu">
-            <li><a href="#header"></a></li>
-            <li><a href="#about">Apie</a></li>
-            <li><a href="#services">Paslaugos</a></li>
-            <li><a href="#portfolio">Galerija</a></li>
-            <li><a href="#kainorastis">Kainoraštis</a></li>
-            <li><a href="#contact">Kontaktai</a></li>
+            <li><a href="#header" onclick="closemenu()">Pagrindinis</a></li>
+            <li><a href="#about" onclick="closemenu()">Apie</a></li>
+            <li><a href="#services" onclick="closemenu()">Paslaugos</a></li>
+            <li><a href="#portfolio" onclick="closemenu()">Galerija</a></li>
+            <li><a href="#kainorastis" onclick="closemenu()">Kainoraštis</a></li>
+            <li><a href="#contact" onclick="closemenu()">Kontaktai</a></li>
             <i class="fas fa-times" onclick="closemenu()"></i>
-          </ul>
+        </ul>
           <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
@@ -273,14 +273,14 @@
         <p>Copy © Aurimas. Atsakingas <i class="fa-solid fa-heart"></i> puslapių kūrimas<br><a href="https://darbai123.github.io/myHomePage/index.html#work" class="my__link">www.darbai123.com</a></p>
       </div>
     </div>
-
+    
     <script src="index.js"></script>
     <script>
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbwaSI86EubQD-ibWR6oFbZzqWezeQpEU-GxcetSjLSxWunH1WW55NYuocghAiq4vmak/exec";
       const form = document.forms["submit-to-google-sheet"];
       const msg = document.getElementById("msg");
-
+    
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
